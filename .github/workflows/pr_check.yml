@@ -34,7 +34,7 @@ jobs:
     - name: Install JS Deps
       uses: borales/actions-yarn@v2.3.0
       with:
-        cmd: rollup -c
+        cmd: run rollup -c
     - name: Build
       run: trunk build
     - name: Run tests

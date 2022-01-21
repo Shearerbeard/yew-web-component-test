@@ -1,5 +1,5 @@
-[clean]
-cargo = true
+# [clean]
+# cargo = true
 
 [[hooks]]
 stage = "post_build"
