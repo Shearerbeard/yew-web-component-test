@@ -23,10 +23,12 @@ jobs:
         target: wasm32-unknown-unknown
         override: true
         profile: minimal
-    - uses: borales/actions-yarn@v2.3.0
+    - name: Install Yarn
+      uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
-    - uses: borales/actions-yarn@v2.3.0
+    - name: Install JS Deps
+      uses: borales/actions-yarn@v2.3.0
         with:
           cmd: rollup -c
     - name: Install trunk
