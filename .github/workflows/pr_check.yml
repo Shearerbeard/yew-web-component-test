@@ -34,6 +34,7 @@ jobs:
     - name: Create Dist Directories
       run: |
         mkdir -p dist/.stage
+        ls -R dist
     - name: Install JS Deps
       uses: borales/actions-yarn@v2.3.0
       with:
