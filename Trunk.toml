@@ -1,0 +1,7 @@
+[clean]
+cargo = true
+
+[[hooks]]
+stage = "post_build"
+command = "yarn"
+command_arguments = [ "run", "rollup", "-c" ]
