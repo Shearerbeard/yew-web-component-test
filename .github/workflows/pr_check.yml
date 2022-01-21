@@ -25,12 +25,12 @@ jobs:
         profile: minimal
     - name: Install Yarn
       uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
+      with:
+        cmd: install
     - name: Install JS Deps
       uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: rollup -c
+      with:
+        cmd: rollup -c
     - name: Install trunk
       uses: jetli/trunk-action@v0.1.0
       with:
