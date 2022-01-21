@@ -31,6 +31,9 @@ jobs:
       uses: jetli/trunk-action@v0.1.0
       with:
         version: 'latest'
+    - name: Create Dist Directories
+      run: |
+        midir -p dist/.stage
     - name: Install JS Deps
       uses: borales/actions-yarn@v2.3.0
       with:
