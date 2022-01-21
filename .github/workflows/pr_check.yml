@@ -27,14 +27,14 @@ jobs:
       uses: borales/actions-yarn@v2.3.0
       with:
         cmd: install
-    - name: Install JS Deps
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: rollup -c
     - name: Install trunk
       uses: jetli/trunk-action@v0.1.0
       with:
         version: 'latest'
+    - name: Install JS Deps
+      uses: borales/actions-yarn@v2.3.0
+      with:
+        cmd: rollup -c
     - name: Build
       run: trunk build
     - name: Run tests
